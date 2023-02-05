@@ -1,0 +1,23 @@
+export const list = [
+    { name: 'Alex Kasumba ' },
+    { name: 'Maribel Aragon' },
+    { name: 'Nova Alimes' },
+    { name: 'Abdulqader Vaid' },
+    { name: 'Helberto Hallera' },
+    { name: 'Sweetcel Jusi' },
+    { name: 'Shaham Saeed Khan' },
+    { name: 'Erickson Vaz Norry' },
+    { name: 'Deepak Guleria' },
+    { name: 'John Kennedy Montuya' },
+    { name: 'Muhammad Anees ur Rehman' },
+    { name: 'Bryan Pineda' },
+    { name: 'Nay Che Yadanar' },
+    { name: 'Farhan Shakil' },
+    { name: 'Mirza Fraz' },
+    { name: 'Dhinaswaran Kumar' },
+    { name: 'Osama Abdo' },
+    { name: 'Khaled Ahmed ' },
+    { name: 'Wakar Ahmad' },
+    { name: 'Ashley Ratnakumar Nallathamby' },
+
+];
