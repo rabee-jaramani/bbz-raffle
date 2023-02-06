@@ -2,7 +2,6 @@ import { useState } from 'react';
 import Celebration from './Celebration';
 import { list } from './data';
 import bbz_logo from './bbz-logo.svg';
-
 import { useEffect } from 'react';
 import Loader from './Loader';
 function App() {
@@ -25,8 +24,6 @@ function App() {
       let employee = main_list.splice(index_of_the_name, 1)[0].name;
       winners.push(employee);
       setFinal_winners(winners);
-      var json = JSON.stringify(winners)
-      console.log('json', json)
     }
   };
   const delay = ms => new Promise(res => setTimeout(res, ms));
@@ -46,8 +43,7 @@ function App() {
   };
   useEffect(() => {
     setMain_list(list);
-    console.log('Final List', final_winners)
-  }, [final_winners])
+  }, [])
 
   return (
     <div className="App">
