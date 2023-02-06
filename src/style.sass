@@ -7,31 +7,27 @@
     position: relative
     width: 100%
     min-height: 100vh
-    background-color: #03257e
-    // &:after
-    //     content: ''
-    //     position: absolute
-    //     right: 0
-    //     top: 0
-    //     width: 40px
-    //     height: 100vh
-    //     background-color: #c4d600
+    background-color: #ffffff
+.header
+    box-shadow: 5px 0 15px #9c9c9c
 .container
+    position: relative
     width: 100%
-    min-height: 100%
+    height: 100%
     display: flex
     flex-direction: column
     align-content: center
     justify-content: center
     color: #fff
+    padding-top: 50px
 .logo
-    position: absolute
-    top: 50PX
+    position: relative
     max-width: 300px
     margin-left: 50%
     transform: translate(-50%)
 .btn-shaffle
-    background-color: #c4d600
+    position: relative
+    background-color: #F0674A
     padding: 10px 50px
     width: fit-content
     text-align: center
@@ -44,50 +40,43 @@ h1,h2
     width: fit-content
     margin: 20px auto
 .cong
-    color: #c4d600
+    color: #F0674A
     text-transform: uppercase
     font-size: 2.5rem
     animation: cong_anim 0.8s ease-in-out infinite
 .winner-is
-    font-size: 2rem
-    letter-spacing: 5px
-// .winner
-//     font-size: 1rem
-//     letter-spacing: 1px
-//     padding: 10px
-//     width: fit-content
-//     color: #000
-//     text-align: center
-//     margin: auto
-//     border: 1px solid #fff
+    width: 100%
+    font-size: 22px
+    font-weight: bold
+    text-align: center
+    margin-bottom: 40px
+    color: #616161
 .resaults-grid
-    z-index: 0
-    max-width: 90%
+    z-index: 15
+    max-width: 50%
     display: grid
     grid-gap: 10px
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr))
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
     margin: auto
 .card
-    background-color: #c4d600
-    color: #000
+    background-color: #F0674A
+    color: #000000
     border-radius: 5px
     padding: 10px
-    font-size: 18px
+    font-size: 16px
     text-align: center
     display: flex
     align-items: center
     justify-content: center
-    min-height: 70px
-.card
-    &:nth-child(even)
-        background-color: #fff
-        color: #1a2a3a
-.element1,.element2
-    position: absolute
-    bottom: 0
-    width: 30vw
-.element2
-    right: 40px
+    min-height: 50px
+.loader-cont
+    position: relative
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    gap: 20px
 
 @keyframes cong_anim
     0%
@@ -109,103 +98,170 @@ h1,h2
     position: absolute
     width: 20px
     height: 50px
-    background: #C4D600
+    background: #000000
     top: 0
     opacity: 0
 
 .confetti-piece:nth-child(1)
-    left: 7%
+    left: 3%
     -webkit-transform: rotate(-40deg)
     -webkit-animation: makeItRain 500ms infinite ease-out
     -webkit-animation-delay: 182ms
     -webkit-animation-duration: 2116ms
 
 .confetti-piece:nth-child(2)
-    left: 14%
+    left: 6%
     -webkit-transform: rotate(4deg)
     -webkit-animation: makeItRain 500ms infinite ease-out
     -webkit-animation-delay: 161ms
     -webkit-animation-duration: 2076ms
 
 .confetti-piece:nth-child(3)
-    left: 21%
+    left: 9%
     -webkit-transform: rotate(-51deg)
     -webkit-animation: makeItRain 500ms infinite ease-out
     -webkit-animation-delay: 481ms
     -webkit-animation-duration: 2103ms
 
 .confetti-piece:nth-child(4)
-    left: 28%
+    left: 12%
     -webkit-transform: rotate(61deg)
     -webkit-animation: makeItRain 500ms infinite ease-out
     -webkit-animation-delay: 334ms
     -webkit-animation-duration: 1408ms
 
 .confetti-piece:nth-child(5)
-    left: 35%
+    left: 15%
     -webkit-transform: rotate(-52deg)
     -webkit-animation: makeItRain 500ms infinite ease-out
     -webkit-animation-delay: 302ms
     -webkit-animation-duration: 1476ms
 
 .confetti-piece:nth-child(6)
-    left: 42%
+    left: 18%
     -webkit-transform: rotate(38deg)
     -webkit-animation: makeItRain 500ms infinite ease-out
     -webkit-animation-delay: 180ms
     -webkit-animation-duration: 2168ms
 
 .confetti-piece:nth-child(7)
-    left: 49%
+    left: 21%
     -webkit-transform: rotate(11deg)
     -webkit-animation: makeItRain 4010ms infinite ease-out
     -webkit-animation-delay: 395ms
     -webkit-animation-duration: 2200ms
 
 .confetti-piece:nth-child(8)
-    left: 56%
+    left: 23%
     -webkit-transform: rotate(49deg)
     -webkit-animation: makeItRain 4000ms infinite ease-out
     -webkit-animation-delay: 14ms
     -webkit-animation-duration: 2600ms
 
 .confetti-piece:nth-child(9)
-    left: 63%
+    left: 26%
     -webkit-transform: rotate(-72deg)
     -webkit-animation: makeItRain 4000ms infinite ease-out
     -webkit-animation-delay: 149ms
     -webkit-animation-duration: 805ms
 
 .confetti-piece:nth-child(10)
-    left: 70%
+    left: 29%
     -webkit-transform: rotate(10deg)
     -webkit-animation: makeItRain 4000ms infinite ease-out
     -webkit-animation-delay: 351ms
     -webkit-animation-duration: 2064ms
 
 .confetti-piece:nth-child(11)
-    left: 77%
+    left: 32%
     -webkit-transform: rotate(4deg)
     -webkit-animation: makeItRain 2000ms infinite ease-out
     -webkit-animation-delay: 307ms
     -webkit-animation-duration: 2200ms
 
 .confetti-piece:nth-child(12)
-    left: 84%
+    left: 35%
     -webkit-transform: rotate(42deg)
     -webkit-animation: makeItRain 2000ms infinite ease-out
     -webkit-animation-delay: 464ms
     -webkit-animation-duration: 1400ms
 
 .confetti-piece:nth-child(13)
-    left: 91%
-    -webkit-transform: rotate(-72deg)
+    left: 38%
+    -webkit-transform: rotate(72deg)
     -webkit-animation: makeItRain 2000ms infinite ease-out
     -webkit-animation-delay: 429ms
     -webkit-animation-duration: 1600ms
 
+.confetti-piece:nth-child(14)
+    left: 65%
+    -webkit-transform: rotate(12deg)
+    -webkit-animation: makeItRain 500ms infinite ease-out
+    -webkit-animation-delay: 329ms
+    -webkit-animation-duration: 1600ms
+.confetti-piece:nth-child(15)
+    left: 71%
+    -webkit-transform: rotate(42deg)
+    -webkit-animation: makeItRain 700ms infinite ease-out
+    -webkit-animation-delay: 229ms
+    -webkit-animation-duration: 1600ms
+.confetti-piece:nth-child(16)
+    left: 75%
+    -webkit-transform: rotate(-42deg)
+    -webkit-animation: makeItRain 2000ms infinite ease-out
+    -webkit-animation-delay: 129ms
+    -webkit-animation-duration: 1600ms
+.confetti-piece:nth-child(17)
+    left: 77%
+    -webkit-transform: rotate(-52deg)
+    -webkit-animation: makeItRain 2000ms infinite ease-out
+    -webkit-animation-delay: 729ms
+    -webkit-animation-duration: 1600ms
+.confetti-piece:nth-child(18)
+    left: 79%
+    -webkit-transform: rotate(-92deg)
+    -webkit-animation: makeItRain 2000ms infinite ease-out
+    -webkit-animation-delay: 129ms
+    -webkit-animation-duration: 1600ms
+.confetti-piece:nth-child(19)
+    left: 82%
+    -webkit-transform: rotate(32deg)
+    -webkit-animation: makeItRain 2000ms infinite ease-out
+    -webkit-animation-delay: 629ms
+    -webkit-animation-duration: 1600ms
+.confetti-piece:nth-child(20)
+    left: 85%
+    -webkit-transform: rotate(42deg)
+    -webkit-animation: makeItRain 2000ms infinite ease-out
+    -webkit-animation-delay: 29ms
+    -webkit-animation-duration: 1600ms
+.confetti-piece:nth-child(21)
+    left: 88%
+    -webkit-transform: rotate(62deg)
+    -webkit-animation: makeItRain 2000ms infinite ease-out
+    -webkit-animation-delay: 129ms
+    -webkit-animation-duration: 1600ms
+.confetti-piece:nth-child(22)
+    left: 91%
+    -webkit-transform: rotate(42deg)
+    -webkit-animation: makeItRain 2000ms infinite ease-out
+    -webkit-animation-delay: 329ms
+    -webkit-animation-duration: 1600ms
+.confetti-piece:nth-child(23)
+    left: 95%
+    -webkit-transform: rotate(52deg)
+    -webkit-animation: makeItRain 2000ms infinite ease-out
+    -webkit-animation-delay: 229ms
+    -webkit-animation-duration: 1600ms
+.confetti-piece:nth-child(24)
+    left: 98%
+    -webkit-transform: rotate(20deg)
+    -webkit-animation: makeItRain 2000ms infinite ease-out
+    -webkit-animation-delay: 129ms
+    -webkit-animation-duration: 1600ms
+
 .confetti-piece:nth-child(odd)
-    background: #c4d600
+    background: #F0674A
 
 .confetti-piece:nth-child(even)
     z-index: 1
@@ -222,7 +278,7 @@ h1,h2
     -webkit-animation-delay: 500ms
 
 .confetti-piece:nth-child(4n-7)
-    background: #fff
+    background: #F0674A
 
 @keyframes makeItRain
     0%
