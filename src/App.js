@@ -31,8 +31,6 @@ function App() {
     await delay(5000);
     chooseEmployees()
     setDone(true);
-    // await delay(2000);
-    // console.log("Waited an additional 2s");
   };
 
 
@@ -51,9 +49,6 @@ function App() {
 
 
       <div className="container">
-        {/* <div onClick={start_draw} style={{ zIndex: 100 }}>Start Draw</div>
-        <h1 style={{ zIndex: 100 }}>Delay</h1> */}
-        {/* <div onClick={() => console.log('winners', final_winners)} style={{ zIndex: 100 }}>show winners</div> */}
         {!done ? (raffiling ? <Loader /> : <h1 className="btn-shaffle" onClick={start_draw}>
           RAFFLE
         </h1>
