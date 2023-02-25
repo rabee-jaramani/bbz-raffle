@@ -4,6 +4,7 @@ import { list } from './data';
 import bbz_logo from './bbz-logo.svg';
 import { useEffect } from 'react';
 import Loader from './Loader';
+import $ from 'jquery'
 function App() {
   // Create Main list 
   // Math.Choose a name from the main list
@@ -20,9 +21,10 @@ function App() {
     // get the name and delete it from main list // loop n times
     for (let i = 0; i < 30; i++) {
       // get the index of shoosen name
-      let index_of_the_name = Math.floor(Math.random() * main_list.length);
-      let employee = main_list.splice(index_of_the_name, 1)[0].name;
-      winners.push(employee);
+      let index_of_the_item = Math.floor(Math.random() * main_list.length);
+      let choosen = main_list.splice(index_of_the_item, 1)[0];
+      console.log('choosen', choosen)
+      winners.push(choosen);
       setFinal_winners(winners);
     }
   };
@@ -33,7 +35,9 @@ function App() {
     setDone(true);
   };
 
-
+  const show_mobile = () => {
+    $('.mobile-number').css("display", "block")
+  }
 
   const start_draw = () => {
     setRaffiling(true)
@@ -57,8 +61,11 @@ function App() {
           <>
             <h2 className="cong">CONGRATULATIONS</h2>
             <p className="winner-is">FOR WINNING YOUR FAVOURITE BRANDED FOOTWEAR</p>
-            <div className='resaults-grid'>{final_winners.map((name) => {
-              return <div className='card'><p className="winner" key={name}>{name.toString()}</p></div>
+            <div className='resaults-grid'>{final_winners.map((winner) => {
+              return <div className='card' onClick={show_mobile}><p className="winner" key={winner.mobile}>
+                <>{winner.name.toString()}</><br />
+                <span className='mobile-number'>{winner.mobile.toString()}</span>
+              </p></div>
             })}</div>
             <Celebration />
           </>
